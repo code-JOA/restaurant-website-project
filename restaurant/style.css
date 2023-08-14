@@ -83,7 +83,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 12vw;
+  width: 14vw;
   height: 5vh;
   border-radius: 5px;
   background-color: #fff;
@@ -237,133 +237,132 @@ nav {
   border-radius: 10px;
 }
 
-.ri-menu-3-line{
-    display: none;
+.ri-menu-3-line {
+  display: none;
 }
 
-.resp-nav{
-    display: none;
+.resp-nav {
+  display: none;
 }
 
+@media (max-width: 500px) {
+  .lft-nav a {
+    font-size: 10vw;
+  }
 
-@media (max-width:500px) {
-    .lft-nav a{
-        font-size: 10vw;
-    }
+  #main {
+    height: auto;
+    min-height: 100vh;
+  }
+  nav {
+    justify-content: space-between;
+    padding: 0vw 10vw;
+    align-items: center;
+  }
+  .cntr-nav {
+    display: none;
+  }
+  .rght-nav {
+    display: none;
+  }
+  .ri-menu-3-line {
+    display: initial;
+    font-size: 5vw;
+  }
 
-    #main{
-        height: auto;
-        min-height: 100vh;
-    }
-    nav{
-        justify-content: space-between;
-        padding: 0vw 10vw;
-        align-items: center;
-    }
-    .cntr-nav{
-        display: none;
-    }
-    .rght-nav{
-        display: none;
-    }
-    .ri-menu-3-line{
-        display: initial;
-        font-size: 5vw;
-    }
+  .resp-nav {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    display: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 9;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  }
 
-    .resp-nav{
-        position: absolute;
-        top: 0;
-        right: -100%;
-        display: initial;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5vh;
-        width: 100%;
-        height: 100vh;
-        background-color: #ffffff;
-        z-index: 9;
-        transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
-    }
+  .resp-nav a {
+    text-decoration: none;
+    font-size: 6vw;
+    color: #333;
+  }
 
-    .resp-nav a{
-        text-decoration: none;
-        font-size: 6vw;
-        color: #333;
-    }
-
-    .resp-nav i{
-        position: absolute;
-        top: 3%;
-        right: 8%;
-        font-size: 7vw;
-    }
-    .main-content{
-        height: auto;
-        min-height: 100vh;
-        flex-direction: column-reverse;
-    }
-    .rght{
-        width: 100%;
-        height: 60vh;
-    }
-    #background{
-        width: 70vw;
-    }
-    #all-plate{
-        width: 50vw;
-        height: 50vw;
-    }
-    #img-one{
-        width: 40vw;
-        right: -50%;
-    }
-    #img-three{
-        width: 33vw;
-        left: -40%;
-        top: -15%;
-    }
-    #img-two{
-        width: 40vw;
-        bottom: -50%;
-        right: 44%;
-    }
-    #glass{
-        top: 45%;
-        right: -8%;
-        width: 58vw;
-        height: 16vh;
-    }
-    .lft{
-        width: 100%;
-        height: 60vh;
-        gap: 1vh;
-    }
-    .lft h1{
-        font-size: 10vw;
-    }
-    .lft p{
-        width: 70vw;
-        font-size: 4vw;
-        margin-top: 3vh;
-        margin-bottom: 3vh;
-    }
-    .lft .search{
-        padding: 1vw 2vw;
-        width: 70vw;
-        height: 10vw;
-    }
-    .lft .search input{
-        width: 70vw;
-    }
-    .lft .search i{
-        font-size: 5vw;
-    }
-    .lft button{
-        margin-top: 1.5vh;
-        width: 30vw;
-        height: 10vw;
-    }
+  .resp-nav i {
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    font-size: 7vw;
+  }
+  .main-content {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column-reverse;
+  }
+  .rght {
+    width: 100%;
+    height: 60vh;
+  }
+  #background {
+    width: 70vw;
+  }
+  #all-plate {
+    width: 50vw;
+    height: 50vw;
+  }
+  #img-one {
+    width: 40vw;
+    right: -50%;
+  }
+  #img-three {
+    width: 33vw;
+    left: -40%;
+    top: -15%;
+  }
+  #img-two {
+    width: 40vw;
+    bottom: -50%;
+    right: 44%;
+  }
+  #glass {
+    top: 45%;
+    right: -8%;
+    width: 58vw;
+    height: 16vh;
+  }
+  .lft {
+    width: 100%;
+    height: 60vh;
+    gap: 1vh;
+  }
+  .lft h1 {
+    font-size: 10vw;
+  }
+  .lft p {
+    width: 70vw;
+    font-size: 4vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  .lft .search {
+    padding: 1vw 2vw;
+    width: 70vw;
+    height: 10vw;
+  }
+  .lft .search input {
+    width: 70vw;
+  }
+  .lft .search i {
+    font-size: 5vw;
+  }
+  .lft button {
+    margin-top: 1.5vh;
+    width: 30vw;
+    height: 10vw;
+  }
 }
